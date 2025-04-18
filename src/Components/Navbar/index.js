@@ -55,9 +55,9 @@ const Navbar = () => {
         </Link>
         <div className="icon-container">
           {isMenuClick ? (
-            <RxCross2 onClick={onMenu} />
+            <RxCross2 className="icon-nav" onClick={onMenu} />
           ) : (
-            <IoMdMenu onClick={onMenu} />
+            <IoMdMenu className="icon-nav" onClick={onMenu} />
           )}
         </div>
       </div>
