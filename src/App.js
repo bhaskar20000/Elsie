@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router";
+import Navbar from "./Components/Navbar";
+import FirstMonth from "./Components/FirstMonth";
+import SecondMonth from "./Components/SecondMonth";
+import ThirdMonth from "./Components/ThirdMonth";
+import FourthMonth from "./Components/FourthMonth";
+import Home from "./Components/Home";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/first-month" element={<FirstMonth />} />
+        <Route path="/second-month" element={<SecondMonth />} />
+        <Route path="/third-month" element={<ThirdMonth />} />
+        <Route path="/fourth-month" element={<FourthMonth />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

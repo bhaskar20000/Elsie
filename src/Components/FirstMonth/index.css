@@ -1,0 +1,44 @@
+@media screen and (max-width:420px){
+    .first-outer-container{
+        padding:10px;
+    }
+
+    .first-month-heading{
+        margin-top:0px;
+        font-size:20px;
+    }
+
+    .first-container-images-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .first-month-image-div{
+        width:100%;
+
+    }
+
+    .first-name-image{
+        width:100%;
+        height:250px;
+        border-radius:10px;
+    }
+
+    .time-container-first{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .first-para-time{
+        font-size:17px;
+    }
+
+    .heart-icon-first{
+        font-size:20px;
+    }
+}

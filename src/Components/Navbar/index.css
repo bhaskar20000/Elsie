@@ -1,0 +1,52 @@
+@media screen and (max-width:420px){
+    *{
+        box-sizing:border-box;
+    }
+
+    .nav-container{
+        display:flex;
+        flex-direction:column;
+        width:100vw;
+        padding:10px;
+        margin-bottom:0px;
+    }
+
+    .first-container{
+        display:flex;
+        flex-direction:row;
+        width:100%;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .nav-heading{
+        font-size:20px;
+        text-decoration:none;
+        color:#000000;;
+    }
+
+    .link-heaing{
+        text-decoration:none;
+    }
+
+    .icon-container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .second-container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;        
+    }
+
+    .nav-link{
+        text-decoration:none;
+    }
+
+    .month-para{
+        margin:0px;
+        margin-bottom:15px;
+    }
+}
