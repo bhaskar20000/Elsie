@@ -2,9 +2,13 @@
     .seventh-heading{
         margin-top:80px;
         font-size:20px;
+        
     }
 
     .seventh-outer-container{
         padding:10px;
+        background-color:#FFCFEF;
+        min-height:100vh;
+        color:#A64D79;
     }
 }

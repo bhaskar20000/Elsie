@@ -11,8 +11,9 @@
         box-shadow:0px 0px 5px 1px;
         position:fixed;
         height:75px;
-        background-color:white;
+        background-color:#FFCFEF;
         top:0;
+        color:#A64D79;
     }
 
     .first-container{
@@ -26,7 +27,7 @@
     .nav-heading{
         font-size:25px;
         text-decoration:none;
-        color:#000000;
+        color:#A64D79;
         margin-left:10px;
     }
 
@@ -46,14 +47,21 @@
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:center; 
-        background-color:#ffffff;
-        padding:10px;
+        background-color:#FFCFEF;
         margin-top:1px solid black;
     }
 
     .nav-link{
         text-decoration:none;
         width:50%;
+        border:1px solid #DBFFCB;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding-top:10px;
+        background-color:#FFCFEF;
+        color:#A64D79;
+        border-radius:5px;
     }
 
     .month-para{

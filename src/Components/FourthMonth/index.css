@@ -1,10 +1,14 @@
 @media screen and (max-width:420px){
     .outer-container{
         padding:10px;
+        background-color:#FFCFEF;
+        min-height:100vh;
+        color:#A64D79;
     }
 
     .fourth-heading{
         font-size:20px;
         margin-top:80px;
+        
     }
 }

@@ -25,10 +25,11 @@
 
     .heart-icon-first{
         font-size:20px;
+        color:black !important;
     }
 
     .heart-fill-icon{
         font-size:20px;
-        color:red;
+        color:red !important;
     }
 }

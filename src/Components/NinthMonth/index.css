@@ -1,4 +1,11 @@
 @media screen and (max-width:420px){
+    .ninth-outer-container{
+        background-color:#FFCFEF;
+        min-height:100vh;
+        color:#A64D79;
+    }
+
+
     .ninth-heading{
         margin-top:80px;
         font-size:20px;
