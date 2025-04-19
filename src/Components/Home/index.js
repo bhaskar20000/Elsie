@@ -1,7 +1,9 @@
+import "./index.css";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="home-outer-container">
+      <h1 className="home-heading">Home</h1>
     </div>
   );
 };
