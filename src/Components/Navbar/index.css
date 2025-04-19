@@ -7,8 +7,11 @@
         display:flex;
         flex-direction:column;
         width:100vw;
-        padding:10px;
         margin-bottom:0px;
+        box-shadow:0px 0px 5px 1px;
+        position:fixed;
+        height:80px;
+        background-color:white;
     }
 
     .first-container{
@@ -22,7 +25,8 @@
     .nav-heading{
         font-size:25px;
         text-decoration:none;
-        color:#000000;;
+        color:#000000;
+        margin-left:10px;
     }
 
     .link-heaing{
@@ -33,12 +37,15 @@
         display:flex;
         justify-content:center;
         align-items: center;
+        margin-right:10px;
     }
 
     .second-container{
         display:flex;
         flex-direction:column;
-        justify-content:center;        
+        justify-content:center; 
+        background-color:#ffffff;
+        padding:10px;
     }
 
     .nav-link{
@@ -48,7 +55,7 @@
     .month-para{
         margin:0px;
         margin-bottom:15px;
-        color:rgb(253, 58, 90);
+       
     }
 
     .icon-nav{
