@@ -1,9 +1,7 @@
 @media screen and (max-width:420px){
     .first-outer-container{
         padding:10px;
-        
         min-height:100vh;
-        background-color:#FFCFEF;
         min-height:100vh;
         color:#A64D79;
     }
