@@ -1,0 +1,10 @@
+@media screen and (max-width:420px){
+    .eigth-heading{
+        margin-top:80px;
+        font-size:20px;
+    }
+
+    .eight-outer-container{
+        padding:10px;
+    }
+}

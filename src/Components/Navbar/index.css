@@ -12,6 +12,7 @@
         position:fixed;
         height:75px;
         background-color:white;
+        top:0;
     }
 
     .first-container{
@@ -42,14 +43,17 @@
 
     .second-container{
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
+        flex-wrap:wrap;
         justify-content:center; 
         background-color:#ffffff;
         padding:10px;
+        margin-top:1px solid black;
     }
 
     .nav-link{
         text-decoration:none;
+        width:50%;
     }
 
     .month-para{

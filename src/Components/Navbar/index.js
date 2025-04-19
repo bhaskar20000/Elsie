@@ -26,6 +26,36 @@ const navBarList = [
     name: "Fourth Month",
     path: "/fourth-month",
   },
+  {
+    id: 5,
+    name: "Fifth Month",
+    path: "/fifth-month",
+  },
+  {
+    id: 6,
+    name: "Sixth Month",
+    path: "/sixth-month",
+  },
+  {
+    id: 7,
+    name: "Seventh Month",
+    path: "/seventh-month",
+  },
+  {
+    id: 8,
+    name: "Eigth Month",
+    path: "/eight-month ",
+  },
+  {
+    id: 9,
+    name: "Ninth Month",
+    path: "/ninth-month",
+  },
+  {
+    id: 10,
+    name: "Tenth Month",
+    path: "tenth-month",
+  },
 ];
 
 const Navbar = () => {
