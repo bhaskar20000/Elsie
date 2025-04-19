@@ -1,0 +1,10 @@
+@media screen and (max-width:420px){
+    .outer-container{
+        padding:10px;
+    }
+
+    .fourth-heading{
+        font-size:20px;
+        margin-top:0px;
+    }
+}

@@ -1,8 +1,5 @@
-import { useState } from "react";
-
 import f1 from "../../Pictures/1stMonth/f1.jpg";
-import { GoHeart } from "react-icons/go";
-import { GoHeartFill } from "react-icons/go";
+import ImgCard from "../ImgCard";
 import "./index.css";
 
 const f1imgs = [
@@ -12,36 +9,6 @@ const f1imgs = [
     time: "15 sep 2024",
   },
 ];
-
-const ImgCard = (props) => {
-  const [isHeartclick, updateLikeStatus] = useState(false);
-
-  const { eachimage } = props;
-  const { image, time } = eachimage;
-
-  const onLike = () => {
-    updateLikeStatus((prev) => !prev);
-  };
-
-  return (
-    <div className="first-month-image-div">
-      <img
-        onDoubleClick={onLike}
-        className="first-name-image"
-        src={image}
-        alt="f1"
-      />
-      <div className="time-container-first">
-        <p className="first-para-time">{time}</p>
-        {isHeartclick ? (
-          <GoHeartFill className="heart-fill-icon" onClick={onLike} />
-        ) : (
-          <GoHeart onClick={onLike} className="heart-icon-first" />
-        )}
-      </div>
-    </div>
-  );
-};
 
 const FirstMonth = () => {
   return (
