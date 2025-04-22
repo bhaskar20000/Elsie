@@ -1,13 +1,17 @@
+
+
 @media screen and (max-width:420px){
     .home-outer-container{
         padding:10px;
         color:#A64D79;
-        
+        min-height:100vh;
+        text-align:center;
         
     }
 
     .home-heading{
         margin-top:80px;
         font-size:20px;
+        text-align:center;
     }
 }
