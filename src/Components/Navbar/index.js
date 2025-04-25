@@ -1,7 +1,9 @@
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
+
+import NavContext from "../../Context/Navcontext";
 
 import "./index.css";
 
@@ -61,8 +63,19 @@ const navBarList = [
 const Navbar = () => {
   const [isMenuClick, updateIconClick] = useState(false);
 
+  const { isClick, updateViewContext } = useContext(NavContext);
+
+  useEffect(() => {
+    if (isClick) {
+      updateIconClick(true);
+    } else {
+      updateIconClick(false);
+    }
+  }, [isClick]);
+
   const onMenu = () => {
     updateIconClick((prev) => !prev);
+    updateViewContext(false);
   };
 
   const NavItem = (props) => {
