@@ -25,7 +25,9 @@ const Home = () => {
     <div ref={homeRef} className="home-outer-container">
       <h1 className="home-heading">Welcome to Elsie's World</h1>
       <p>Watch her grow, giggle, and shine!</p>
-      <button onClick={onViewMore}>View More</button>
+      <button className="view-more-home-button" onClick={onViewMore}>
+        View More
+      </button>
     </div>
   );
 };

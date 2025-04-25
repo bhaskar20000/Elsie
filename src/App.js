@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 
+import backgroundHome from "./Pictures/HomePageBackground/backgroundHome.png";
 import Navbar from "./Components/Navbar";
 import FirstMonth from "./Components/FirstMonth";
 import SecondMonth from "./Components/SecondMonth";
@@ -20,9 +21,20 @@ import "./App.css";
 const App = () => {
   const [clickStatus, viewMoreUpdate] = useState(false);
 
+  const appRef = useRef(null);
+
   const callStateUpdate = (value) => {
     viewMoreUpdate(value);
   };
+
+  useEffect(() => {
+    if (appRef.current) {
+      appRef.current.style.backgroundImage = `url(${backgroundHome})`;
+      appRef.current.style.backgroundSize = "cover";
+      appRef.current.style.backgroundRepeat = "no-repeat";
+      appRef.current.style.backgroundPosition = "center";
+    }
+  });
 
   return (
     <NavContext.Provider
@@ -31,7 +43,7 @@ const App = () => {
         updateViewContext: callStateUpdate,
       }}
     >
-      <div className="outer-app-container">
+      <div ref={appRef} className="outer-app-container">
         <BrowserRouter>
           <Navbar />
           <Routes>

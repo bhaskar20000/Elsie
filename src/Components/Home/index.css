@@ -14,4 +14,13 @@
         font-size:20px;
         text-align:center;
     }
+
+    .view-more-home-button{
+        height:40px;
+        width:100px;
+        border-radius:10px;
+        border:1px solid pink;
+        background-color:#dc78aa;
+        color:#ffffff;
+    }
 }

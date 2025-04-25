@@ -1,8 +1,9 @@
 import { IoMdMenu } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useRef, useEffect, useState } from "react";
 import { Link } from "react-router";
 
+import backgroundHome from "../../Pictures/HomePageBackground/backgroundHome.png";
 import NavContext from "../../Context/Navcontext";
 
 import "./index.css";
@@ -63,6 +64,8 @@ const navBarList = [
 const Navbar = () => {
   const [isMenuClick, updateIconClick] = useState(false);
 
+  const navRef = useRef(null);
+
   const { isClick, updateViewContext } = useContext(NavContext);
 
   useEffect(() => {
@@ -72,6 +75,15 @@ const Navbar = () => {
       updateIconClick(false);
     }
   }, [isClick]);
+
+  useEffect(() => {
+    if (navRef.current) {
+      navRef.current.style.backgroundImage = `url(${backgroundHome})`;
+      navRef.current.style.backgroundSize = "cover";
+      navRef.current.style.backgroundRepeat = "no-repeat";
+      navRef.current.style.backgroundPosition = "center";
+    }
+  }, []);
 
   const onMenu = () => {
     updateIconClick((prev) => !prev);
@@ -91,7 +103,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="nav-container">
+    <nav ref={navRef} className="nav-container">
       <div className="first-container">
         <Link className="link-heaing" to="/">
           <h1 className="nav-heading">Elsie</h1>
