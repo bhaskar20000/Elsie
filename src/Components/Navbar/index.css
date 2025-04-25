@@ -59,8 +59,9 @@
         justify-content:center;
         align-items:center;
         padding-top:10px;
-        color:#A64D79;
+        color:#ffffff;
         border-radius:5px;
+        background-color: #facbe2;
     }
 
     .month-para{
