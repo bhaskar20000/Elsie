@@ -54,14 +54,14 @@
     .nav-link{
         text-decoration:none;
         width:50%;
-        border:1px solid #c57fa2;
+        border:1px solid #6E4B3A;
         display:flex;
         justify-content:center;
         align-items:center;
         padding-top:10px;
-        color:#ffffff;
+        color:#6E4B3A;
         border-radius:5px;
-        background-color: #facbe2;
+        background-color: #FFEAEA;
     }
 
     .month-para{
