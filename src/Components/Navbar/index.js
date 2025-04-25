@@ -106,7 +106,7 @@ const Navbar = () => {
     <nav ref={navRef} className="nav-container">
       <div className="first-container">
         <Link className="link-heaing" to="/">
-          <h1 className="nav-heading">Elsie Rajamani</h1>
+          <h1 className="nav-heading">Elsie</h1>
         </Link>
         <div className="icon-container">
           {isMenuClick ? (
