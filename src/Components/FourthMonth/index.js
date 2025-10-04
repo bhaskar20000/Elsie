@@ -1,11 +1,11 @@
 import ImgCard from "../ImgCard";
-import f1 from "../../Pictures/4thMonth/f1.jpg";
+import f from "../../Pictures/4thMonth/f.jpg";
 import "./index.css";
 
 const imagesList = [
   {
     id: 1,
-    image: f1,
+    image: f,
     time: "15 Dec 2024",
   },
 ];

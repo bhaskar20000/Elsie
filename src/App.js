@@ -11,8 +11,10 @@ import FifthMonth from "./Components/FifthMonth";
 import SixthMonth from "./Components/SixthMonth";
 import SeventhMonth from "./Components/SeventhMonth";
 import EightMonth from "./Components/EightMonth";
-import NinthMonth from "./Components/NinthMonth";
 import TenthMonth from "./Components/TenthMonth";
+import EleventhMonth from "./Components/EleventhMonth";
+import TwelfthMonth from "./Components/TwelfthMonth";
+import NineCard from "./Components/NinethMonth";
 import Home from "./Components/Home";
 import NavContext from "../src/Context/Navcontext";
 
@@ -56,8 +58,10 @@ const App = () => {
             <Route path="/sixth-month" element={<SixthMonth />} />
             <Route path="/seventh-month" element={<SeventhMonth />} />
             <Route path="/eight-month" element={<EightMonth />} />
-            <Route path="/ninth-month" element={<NinthMonth />} />
+            <Route path="/ninth-month" element={<NineCard />} />
             <Route path="/tenth-month" element={<TenthMonth />} />
+            <Route path="/eleventh-month" element={<EleventhMonth />}></Route>
+            <Route path="/twelfth-month" element={<TwelfthMonth />}></Route>
           </Routes>
         </BrowserRouter>
       </div>

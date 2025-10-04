@@ -11,53 +11,63 @@ import "./index.css";
 const navBarList = [
   {
     id: 1,
-    name: "First Month",
+    name: "1st month",
     path: "/first-month",
   },
   {
     id: 2,
-    name: "Second Month",
+    name: "2nd month",
     path: "/second-month",
   },
   {
     id: 3,
-    name: "Third Month",
+    name: "3rd month",
     path: "/third-month",
   },
   {
     id: 4,
-    name: "Fourth Month",
+    name: "4th month",
     path: "/fourth-month",
   },
   {
     id: 5,
-    name: "Fifth Month",
+    name: "5th month",
     path: "/fifth-month",
   },
   {
     id: 6,
-    name: "Sixth Month",
+    name: "6th month",
     path: "/sixth-month",
   },
   {
     id: 7,
-    name: "Seventh Month",
+    name: "7th month",
     path: "/seventh-month",
   },
   {
     id: 8,
-    name: "Eigth Month",
+    name: "8th month",
     path: "/eight-month ",
   },
   {
     id: 9,
-    name: "Ninth Month",
+    name: "9th month",
     path: "/ninth-month",
   },
   {
     id: 10,
-    name: "Tenth Month",
-    path: "tenth-month",
+    name: "10th month",
+    path: "/tenth-month",
+  },
+  {
+    id: 11,
+    name: "11th month",
+    path: "/eleventh-month",
+  },
+  {
+    id: 12,
+    name: "12th month",
+    path: "/twelfth-month",
   },
 ];
 
@@ -106,7 +116,7 @@ const Navbar = () => {
     <nav ref={navRef} className="nav-container">
       <div className="first-container">
         <Link className="link-heaing" to="/">
-          <h1 className="nav-heading">Elsie</h1>
+          <h1 className="nav-heading">Junia Elezabeth Crysolite</h1>
         </Link>
         <div className="icon-container">
           {isMenuClick ? (

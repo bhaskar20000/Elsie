@@ -6,7 +6,7 @@ import { GoHeartFill } from "react-icons/go";
 const NineCard = () => {
   const [isHeartclick, updateLikeStatus] = useState(false);
 
-  const time = "15 Jun 2025";
+  const time = "Aug 2025";
 
   const onLike = () => {
     updateLikeStatus((prev) => !prev);
@@ -14,12 +14,12 @@ const NineCard = () => {
 
   return (
     <div className="fifth-outer-container">
-      <h1 className="fifth-heading">10th Month</h1>
+      <h1 className="fifth-heading">12th Month</h1>
       <div className="first-month-image-div">
         <img
           onDoubleClick={onLike}
           className="first-name-image"
-          src="https://res.cloudinary.com/dpqt8338m/image/upload/v1759567719/10_th_month_nddqde.jpg"
+          src="https://res.cloudinary.com/dpqt8338m/image/upload/v1759568119/12th_month_iggava.jpg"
           alt="f1"
         />
         <div className="time-container-first">

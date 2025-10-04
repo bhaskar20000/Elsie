@@ -5,8 +5,23 @@
         padding:10px;
         color:#A64D79;
         min-height:100vh;
-        text-align:center;
+        text-align:center; 
         
+    }
+
+    .slider-image{
+        height:250px;
+        width:100%;
+        border-radius:10px;
+    }
+
+    
+
+    .slider-image-12{
+        height:250px;
+        width: 60%;
+        margin:auto;
+        border-radius: 10px;
     }
 
     .home-heading{
@@ -22,5 +37,6 @@
         border:1px solid pink;
         background-color:#dc78aa;
         color:#ffffff;
+        margin-top:50px;
     }
 }
