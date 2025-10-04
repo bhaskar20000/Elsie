@@ -15,6 +15,7 @@ import TenthMonth from "./Components/TenthMonth";
 import EleventhMonth from "./Components/EleventhMonth";
 import TwelfthMonth from "./Components/TwelfthMonth";
 import NineCard from "./Components/NinethMonth";
+import SliderPage from "./Components/SliderPage";
 import Home from "./Components/Home";
 import NavContext from "../src/Context/Navcontext";
 
@@ -48,6 +49,7 @@ const App = () => {
       <div ref={appRef} className="outer-app-container">
         <BrowserRouter>
           <Navbar />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/first-month" element={<FirstMonth />} />
@@ -62,6 +64,7 @@ const App = () => {
             <Route path="/tenth-month" element={<TenthMonth />} />
             <Route path="/eleventh-month" element={<EleventhMonth />}></Route>
             <Route path="/twelfth-month" element={<TwelfthMonth />}></Route>
+            <Route path="/slides-page" element={<SliderPage />} />
           </Routes>
         </BrowserRouter>
       </div>

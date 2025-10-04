@@ -1,25 +1,18 @@
 
 
 @media screen and (max-width:480px){
-    .home-outer-container{
-        padding:10px;
-        color:#A64D79;
-        min-height:100vh;
-        text-align:center; 
-        
-    }
 
+    .slider-home-conatiner{
+        padding-top:10vh;
+        max-height:100vh;
+
+    }
+    
     .slider-image{
         height:250px;
         width:100%;
         border-radius:10px;
     }
-
-    .home-image{
-        height:200px;
-        width:150px;
-    }
-    
 
     .slider-image-12{
         height:250px;
@@ -28,13 +21,12 @@
         border-radius: 10px;
     }
 
-    .home-heading{
-        margin-top:80px;
-        font-size:20px;
-        text-align:center;
+    .back-button-div{
+        width:100%;
+        text-align:right;
     }
 
-    .view-more-home-button{
+    .back-button{
         height:40px;
         width:100px;
         border-radius:10px;
@@ -42,9 +34,14 @@
         background-color:#dc78aa;
         color:#ffffff;
         margin-top:20px;
+        margin-left:auto;
     }
 
-    .home-image-div{
-        margin-top:10vh;
+    .slide-heading{
+        color:#A64D79;
+        font-family: "Caveat";
+        font-size:25px;
     }
+    
+
 }
