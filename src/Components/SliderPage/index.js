@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { v4 as uuidv4 } from "uuid";
 
 import f1 from "../../Pictures/1stMonth/f1.jpg";
 import s1 from "../../Pictures/2ndMonth/s1.jpg";
@@ -16,6 +17,17 @@ import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 
 const SliderPage = () => {
+  const imagesList = [
+    {
+      id: uuidv4(),
+      img: "https://res.cloudinary.com/dpqt8338m/image/upload/v1759581698/pink-1_oljdf9.jpg",
+    },
+    {
+      id: uuidv4(),
+      img: "https://res.cloudinary.com/dpqt8338m/image/upload/v1759581733/p-2_o87fpn.jpg",
+    },
+  ];
+
   let settings = {
     dots: false,
     infinite: true,
@@ -29,6 +41,13 @@ const SliderPage = () => {
     <div className="slider-home-conatiner">
       <h1 className="slide-heading">Slide to see more photos</h1>
       <Slider {...settings}>
+        <div>
+          <img
+            className="slider-image-slim"
+            alt="elsie's-image"
+            src="https://res.cloudinary.com/dpqt8338m/image/upload/v1759581733/p-2_o87fpn.jpg"
+          />
+        </div>
         <div>
           <img className="slider-image" alt="elsie's-image" src={f1} />
         </div>
