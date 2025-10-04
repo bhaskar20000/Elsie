@@ -25,8 +25,7 @@ const Home = () => {
   };
 
   let settings = {
-    dots: true,
-    arrows: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     speed: 600,
